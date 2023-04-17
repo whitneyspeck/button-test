@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="/home/bloop" class="link-block-4 w-inline-block"><img src="https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 17vw, (max-width: 991px) 18vw, 30vw" srcset="https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop-p-500.png 500w, https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop-p-800.png 800w, https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop-p-1080.png 1080w, https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop.png 1388w" alt="Blue, green, and orange gradient with &quot;Welcome to Bloop&quot; brand on top" class="image-14"><div class="div-block-16"><h2 class="homeprojecttitle">Bloop</h2><h3 class="homeprojectdescription">Mobile App Prototype * UI / UX Design &amp; Research * UI Animation * Social Cause</h3><h3 class="imagecaption">Aug - Dec 2022</h3></div></a>
+        <img src="https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 17vw, (max-width: 991px) 18vw, 30vw" srcset="https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop-p-500.png 500w, https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop-p-800.png 800w, https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop-p-1080.png 1080w, https://uploads-ssl.webflow.com/63bc78848e7e88942328ed2d/63cdd905736e68bfd7b914b6_WelcomeToBloop.png 1388w" alt="Blue, green, and orange gradient with &quot;Welcome to Bloop&quot; brand on top" class="image-14"> -->
+
+    <button class="mouse-cursor-gradient-tracking">
+        <span>Hover me</span>
+    </button>
+
+    <script>
+        let btn = document.querySelector('.mouse-cursor-gradient-tracking');
+        btn.addEventListener('mousemove', e => {
+            let rect = e.target.getBoundingClientRect();
+            let x = e.clientX - rect.left;
+            let y = e.clientY - rect.top;
+            btn.style.setProperty('--x', x + 'px');
+            btn.style.setProperty('--y', y + 'px');
+    });
+    </script>
+
+    
+</body>
+</html>
+
